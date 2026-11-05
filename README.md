@@ -21,6 +21,8 @@ Preprocesado: orientación EXIF, RGB, letterbox 640×640 con relleno 114 y norma
 
 ## Instalación y ejecución
 
+El repositorio web distribuye las carpetas del código en `source.zip`. Antes de ejecutar localmente o revisar los módulos, extraiga ese archivo en la raíz con `python -m zipfile -e source.zip .`. El ZIP de entrega también contiene las carpetas ya extraídas. Docker y el workflow realizan esta extracción automáticamente.
+
 Python 3.13. En PowerShell, desde la raíz del proyecto:
 
 ```powershell

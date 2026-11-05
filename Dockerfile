@@ -3,10 +3,8 @@ ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 PORT=7860 DB_PATH=/srv/data/sin
 WORKDIR /srv
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt && useradd --uid 10001 --create-home appuser
-COPY app ./app
-COPY web ./web
-COPY models ./models
-COPY scripts/download_model.py ./scripts/download_model.py
+COPY source.zip /tmp/source.zip
+RUN python -m zipfile -e /tmp/source.zip /srv && rm /tmp/source.zip
 RUN python scripts/download_model.py
 RUN mkdir -p /srv/data && chown 10001:10001 /srv/data
 USER 10001
