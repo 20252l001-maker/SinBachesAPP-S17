@@ -2,6 +2,14 @@
 
 Proyecto integrador de la Sesión 17 — Yurandir Loayza Rosas.
 
+**Aplicación publicada y verificada:** https://sinbachesapp-s17.onrender.com
+
+**Repositorio:** https://github.com/20252l001-maker/SinBachesAPP-S17
+
+**Ejecución CI satisfactoria:** https://github.com/20252l001-maker/SinBachesAPP-S17/actions/runs/41954289647
+
+La API key se consulta en su cuenta de Render, servicio sinbachesapp-s17, sección Environment. No está en este documento ni en el código. El servicio usa el plan Free; puede tardar en responder después de inactividad y los reportes locales son temporales.
+
 Aplicación con inferencia real de baches en fotografías mediante un modelo preentrenado YOLOv8s en ONNX, API FastAPI segura, registro de incidencias georreferenciadas, revisión humana y monitoreo. Una detección es candidata: no acredita profundidad, gravedad o reparación de una vía.
 
 ## Funciones
