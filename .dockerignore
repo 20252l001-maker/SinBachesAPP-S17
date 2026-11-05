@@ -1,0 +1,11 @@
+.env
+.venv
+.git
+tests
+evidence
+samples
+monitoring
+data
+__pycache__
+*.docx
+*.zip

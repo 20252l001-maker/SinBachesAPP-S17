@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: sinbachesapp-s17
+    runtime: docker
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: API_KEY
+        sync: false
+      - key: PORT
+        value: 7860
+      - key: DB_PATH
+        value: /srv/data/sinbaches.db
